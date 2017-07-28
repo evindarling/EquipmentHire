@@ -1,0 +1,87 @@
+/**
+  *  Author: Evin Darling (C00144257)
+  *  Date: March 2017
+  *  Description: CSS Stylesheet containing styling for the menu bar
+  *
+  *  Colour palette is composed of:
+  *  #212b2e: very dark bluish/gray
+  *  #28475b: lighter blue/green
+  *  #7aa08d: light green/grey
+  *  #d3d3ab: plain sand-like
+  *  #f0f8b2: light cream/yellow
+**/
+
+/**
+ * Fixed width menu bar of same dark
+ * colour used for the links. List style
+ * set to none to hide bullet. Slightly
+ * rounded border like most other elements.
+ */
+ul {
+    list-style-type: none;
+    margin: auto;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+    background-color: #212b2e;
+    max-width: 875px;
+    min-width: 875px;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #f0f8b2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/**
+ * Blue/grey highlight when
+ * cursor hovers the list items.
+ */
+li a:hover, .dropdown:hover {
+    background-color: #28475b;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+/**
+ * Slight blurred vertical shadow behind
+ * the dropdown box.
+ */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #28475b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.dropdown-content a {
+    color: #f0f8b2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/**
+ * Light green/grey highlight
+ * for dropdown items when hovered.
+ */
+.dropdown-content a:hover {
+    background-color: #7aa08d;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

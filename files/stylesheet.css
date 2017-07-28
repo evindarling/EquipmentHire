@@ -1,0 +1,218 @@
+/**
+  *  Author: Evin Darling (C00144257)
+  *  Date: March 2017
+  *  Description: CSS Stylesheet containing most styling for the equipment hire
+  *               project web application. Rest is in mainmenu.css.
+  *
+  *  Colour palette is composed of:
+  *  #212b2e: very dark bluish/gray
+  *  #28475b: lighter blue/green
+  *  #7aa08d: light green/grey
+  *  #d3d3ab: plain sand-like
+  *  #f0f8b2: light cream/yellow
+**/
+
+/**
+ * Fixed size panel used to contain
+ * most content on the site. Margin
+ * is set to auto to center most
+ * elements on the site.
+ */
+div.panel {
+    margin: auto;
+    color: #212b2e;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    max-width: 875px;
+    min-width: 875px;
+    min-height: 550px;
+    background-color: #7aa08d;
+    border-radius: 5px;
+}
+
+/**
+ * Smaller panel used for post-login screen.
+ */
+div.home {
+    margin: auto;
+    padding: 2px;
+    color: #212b2e;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #7aa08d;
+    border-radius: 5px;
+    width: 50%;
+    height: 200px;
+}
+
+/**
+ * Styles links to be large rectangular
+ * dark buttons with with an inset box
+ * shadow to give a 3D effect. Font colour
+ * is light yellow.
+ */
+a.button {
+    margin: auto;
+    display: block;
+    width: 280px;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #212b2e;
+    border-radius: 3px;
+    box-shadow: 0 -22px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #f0f8b2;
+    text-align: center;
+}
+
+/**
+ * When the cursor hovers over the links
+ * they are highlighted in light green/grey.
+ */
+a:hover {
+    background-color: #28475b;
+}
+
+p.tree {
+    text-align: start;
+    padding: 2px;
+}
+
+a.tree {
+    text-decoration: none;
+    color: #212b2e;
+}
+
+label.justify {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40%;
+}
+
+div.addButton {
+    margin:auto;
+    max-width: 150px;
+}
+
+div.deleteButton {
+    margin:auto;
+    max-width: 230px;
+}
+
+div.listboxAmendDelete {
+    margin:auto;
+    max-width: 195px;
+}
+
+div.amendButton {
+    margin:auto;
+    max-width: 400px;
+}
+
+div.hireButton {
+    margin:auto;
+    max-width: 200px;
+}
+
+div.hireButton2 {
+    display: inline-flex;
+}
+
+div.daysToRentClass {
+    display: block;
+    padding: 4px;
+}
+
+p {
+    margin: initial;
+}
+
+p.error {
+    margin: auto;
+    max-width: 40%;
+    color: #c00000;
+}
+
+h1, h4 {
+    text-align: center;
+}
+
+p.price {
+    font-size: 20px;
+    display: inline;
+}
+
+/**
+ * Table background colour is set to
+ * a plain sand-like colour.
+ */
+div.hireEquipTable > table {
+    margin: auto;
+    background-color: #d3d3ab;
+    color: #212b2e;
+    border: 2px solid #212b2e;
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+div.hireEquipTable th, div.hireEquipTable tr, div.hireEquipTable td {
+    border: 2px solid #212b2e;
+    padding: 5px;
+}
+
+div.reportsTable {
+    max-height: 350px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+div.reportsTable > table {
+    width: 60%;
+    display: inline-table;
+    background-color: #d3d3ab;
+    color: #212b2e;
+    border: 2px solid #212b2e;
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+div.reportsTable th, div.reportsTable tr, div.reportsTable td {
+    border: 2px solid #212b2e;
+    padding: 5px;
+}
+
+/**
+ *  Styles buttons similarly to the link but more rounded
+ *  and with a border.
+ */
+input.btn, button {
+    margin: auto;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #212b2e;
+    border-radius: 30px;
+    box-shadow: 0 -17px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #f0f8b2;
+    text-align: center;
+}
+
+/**
+ * Greys out the buttons when disabled.
+ */
+input.btn:disabled, button:disabled {
+    color: grey;
+}
+
+/**
+ * Same hover highlighting as the links but
+ * for the buttons.
+ */
+input.btn:hover:enabled, button:hover:enabled {
+    background-color: #28475b;
+}
